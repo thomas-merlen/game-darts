@@ -1,13 +1,17 @@
 
 let scoreElem = document.getElementById("score");
 let score = 501;
+let compteurElem = document.getElementById("compteur")
+let compteur = 0;
 
 document.querySelectorAll("button").forEach(button => {
     button.addEventListener("click", () => {
         let value = button.textContent;
 
+
+
         if (value === "Retour") {
-            alert("test");
+            alert("Mise en place prochainement");
         }
 
         let points = parseValue(value);
@@ -15,6 +19,8 @@ document.querySelectorAll("button").forEach(button => {
         if (score - points >= 0) {
             score -= points;
             scoreElem.textContent = score;
+            compteur += 1;
+            compteurElem.textContent = compteur
         }
     });
 });
