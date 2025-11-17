@@ -1,0 +1,58 @@
+body{
+    background-color: #f4f6f7;
+}
+
+/* Conteneur général en bas de page */
+.grille {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 0 10px;
+}
+
+/* Une ligne = grille 20 colonnes */
+.ligne {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 4px;
+}
+
+
+
+/* Style des boutons */
+.ligne button {
+    padding: 10px 0;
+    background-color: #e6e6e6;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Effet hover */
+.ligne button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Effet click */
+.ligne button:active {
+    transform: scale(0.95);
+}
+
+.ligne4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+
+/* Couleurs personnalisées par ligne */
+.ligne1 button { background-color: #ffd9d9; }
+.ligne2 button { background-color: #d9ffea; }
+.ligne3 button { background-color: #d9e5ff; }
+.ligne4 button { background-color: #fff5cc; }
