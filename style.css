@@ -1,5 +1,6 @@
 body{
     background-color: #f4f6f7;
+
 }
 
 .grille{
@@ -47,7 +48,20 @@ body{
 .ligne3 button{ background-color: #d9e5ff; }
 .ligne4 button{ background-color: #fff5cc; }
 
-h1{
+#score{
+    font-size: 8em;
+}
+
+#username{
+    font-size: 5em;
+}
+
+#compteur{
+    font-size: 5em;
+}
+
+p{
     text-align: center;
-    font-size: 10em;
+    margin: 0;
+    padding: 0;
 }
